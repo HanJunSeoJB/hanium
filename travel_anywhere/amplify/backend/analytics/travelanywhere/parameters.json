@@ -1,0 +1,21 @@
+{
+    "appName": "travelanywhere",
+    "roleName": "pinpointLambdaRolee98d2c15",
+    "cloudformationPolicyName": "cloudformationPolicye98d2c15",
+    "cloudWatchPolicyName": "cloudWatchPolicye98d2c15",
+    "pinpointPolicyName": "pinpointPolicye98d2c15",
+    "authPolicyName": "pinpoint_amplify_e98d2c15",
+    "unauthPolicyName": "pinpoint_amplify_e98d2c15",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
